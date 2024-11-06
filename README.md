@@ -1,8 +1,8 @@
-# [Name]
-## [Assignment #]
-## [Submission date: MM/DD/YY]
+# [Ryder Downey]
+## [Assignment 08]
+## [Submission date: 11/04/2024]
 ## Worked with/sources 
-* example
+* John Jones
 * example
 * example
 * example

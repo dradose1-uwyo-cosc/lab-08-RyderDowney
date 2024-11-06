@@ -3,7 +3,7 @@
 # Submission Date: 11/5/2024
 # Lab 08
 # Lab Section: 14
-# Sources, people worked with, help given to:
+# Sources, people worked with, help given to: John Jones, Google AI showed me how to input the math function for the sqrt
 # your
 # comments
 # here
@@ -15,20 +15,14 @@
 # Floats should only have one decimal point in them 
 
 def convert_string(s):
-    # Check if the string is an integer
-    if s.isdigit() or (s[0] == '-' and s[1:].isdigit()):
+    """Function to convert strings into integers or floats"""
+    if s.isdigit() or (s[0] == '-' and s[1:].isdigit()): #checks if string is an integer
         return int(s)
-    
-    # Check if the string is a float with only one decimal point
-    elif s.count('.') == 1:
-        left, right = s.split('.')
-        
-        # Check if both parts are digits, allowing for a negative sign on the left
-        if (left.isdigit() or (left.startswith('-') and left[1:].isdigit())) and right.isdigit():
+    elif s.count('.') == 1: #checks if the string is a float with only one decial point
+        left, right = s.split('.') #removes the . from the float
+        if (left.isdigit() or (left.startswith('-') and left[1:].isdigit())) and right.isdigit(): #checks if both sides are digits and for if there is a negative sign present
             return float(s)
-    
-    # If it can't be converted, return False
-    return False
+    return False #returns for if the input cant be converted into an integer or float
 
 print("*" * 75)
 
